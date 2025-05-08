@@ -39,3 +39,32 @@
 #pagina-selecionada {
     color: #00bfff;
 }
+
+.frontend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.index-card {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.index-card img {
+    width: 300px;
+    height: 250px;
+    margin: auto;
+}
+.index-card:hover {
+    transform: scale(1.05);
+}
